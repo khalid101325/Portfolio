@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        
+      </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+
+        <!-- Registration Form -->
+        <div id="registrationForm">
+            <h2>Register</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required><br><br>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="username">Create Username:</label>
+            <input type="text" id="regUsername" required><br><br>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="regPassword" required><br><br>
+
+            <button onclick="register()">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginForm" style="display: none;">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="loginUsername" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="loginPassword" required><br><br>
+
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Display Data -->
+        <div id="displayData" style="display: none;">
+            <h2>Your Personal Data</h2>
+            <p><strong>Name:</strong> <span id="displayName"></span></p>
+            <p><strong>Age:</strong> <span id="displayAge"></span></p>
+            <p><strong>Experience:</strong> <span id="displayExperience"></span></p>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
